@@ -17,3 +17,8 @@ func TestMissingArgsErr(t *testing.T) {
 	err := NewMissingArgsErr("test-cmd")
 	assert.Equal(t, "(test-cmd) command is missing required arguments", err.Error())
 }
+
+func TestMockRunner(t tesing.T) {
+	e :=fmt.Errorf("an error")
+	mr := MockRunner{e}	
+}
