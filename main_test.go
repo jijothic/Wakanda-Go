@@ -8,3 +8,7 @@ import (
 func TestMain() {
 	os.Exit(m.Run())
 }
+
+func TestVersion(t *tesing.T) {
+
+}
